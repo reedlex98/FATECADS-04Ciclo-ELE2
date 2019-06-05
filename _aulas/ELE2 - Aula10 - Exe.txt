@@ -1,0 +1,30 @@
+Ex. 1 (projeto "Aula10_03"):
+
+Crie um formulário HTML (action = ""), dentro de um Servlet, para que o usuário informe um nome e um email. 
+
+Recupere esses dados e exiba-os na própria página.
+
+
+Ex. 2 (projeto "Aula10_04"): 
+
+Crie um formulário (action = ""), padrão Servlet, para que o usuário informe um texto qualquer a ser tratado. 
+
+Dentro da classe Servlet, mas fora do método "processRequest", crie os métodos "retornarMaiusculo" e "retornarMinusculo".
+
+Recupere o texto informado pelo usuário e faça com que esse texto seja atribuído às funções de tornar maiúsculo e minúsculo. Trate-o nas funções e retorne-o em seguida; ao final, exiba esses valores tratados.
+
+
+Ex. 3 (projeto "Aula10_05"):
+
+Crie um novo projeto no padrão Servlet. Crie um pacote para a regra de negócio (sugestão de nome: "negocio"), onde deverá existir uma classe chamada "Calculo", que irá realizar os cálculos das 4 operações aritméticas básicas. A classe Calculo deve implementar a interface ICalculo abaixo:
+
+interface ICalculo{
+    float somar();
+    float subtrair();
+    float multiplicar();
+    float dividir();
+}
+
+Num outro pacote (chamado "servlets"), crie o Servlet ("ServletCalculadora") e, dentro deste, crie um formulário para receber 2 valores numéricos e instanciar objetos da classe "Calculo". 
+
+Receba (via formulário) os valores informados pelo cliente e passe-os ao objeto da Calculo, realizando as 4 operações aritméticas (cada uma em um botão diferente) e devolvendo o resultado ao cliente (via HTML).

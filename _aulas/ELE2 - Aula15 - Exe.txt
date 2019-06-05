@@ -1,0 +1,12 @@
+Ex. 1 ("Aula15_01"):
+
+Crie um formulário, numa JSP ("index.jsp"), para realizar o cálculo de operações aritméticas básicas a partir de 2 valores informados pelo usuário (sendo um botão para cada operação). Num pacote "negocio", crie a classe Calculo, que deverá implementar a interface ICalculo abaixo:
+
+interface ICalculo{
+    float somar(float v1, float v2);
+    float subtrair(float v1, float v2);
+    float multiplicar(float v1, float v2);
+    float dividir(float v1, float v2);
+}
+
+Crie um servlet chamado "ServletCalculadora" (num pacote específico para tal fim). Nele, caso o resultado da operação realizada gere um número par, apresente-o numa página chamada "resultadoPar.jsp"; caso o resultado seja ímpar, apresente-o numa página chamada "resultadoImpar.jsp". Porém, caso a operação não possa ser realizada pela ausência de um valor (caso o usuário deixe de preencher um dos campos), apresente uma mensagem de erro na página "index.jsp".

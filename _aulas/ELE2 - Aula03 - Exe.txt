@@ -1,0 +1,82 @@
+Ex. 1 ("Aula03_01"):
+- crie uma primeira classe chamada Principal (onde terá a função "main"; pacote: "view");
+- elabore uma segunda classe chamada Veiculo (abstrata). Nela, deverão existir os atributos "nome", "fabricante", "ano" e "velocidade". Além disso, deverão existir os métodos "acelerar", "desacelerar" e "parar", onde a velocidade sofrerá, respectivamente, o acréscimo de 5km/h, o decréscimo de 5km/h e a atribuição de 0km/h.
+- desenvolva uma terceira classe chamada Carro, que seja subclasse de Veiculo. Nela, inclua o atributo "quantidadePortas" e faça um polimorfismo do método "acelerar", aumentando a velocidade de 10km/h em 10km/h;
+- por fim, crie uma quarta classe chamada Moto, também subclasse de Veiculo; ela deverá ter o atributo "apoioAcionado" (booleano) e um polimorfismo do método "acelerar", outro do método "desacelerar" e outro para método "parar": quando a velocidade for igual a 0, o atributo "apoioAcionado" deverá ser verdadeiro; quando a velocidade for maior que 0, o atributo deverá ir para falso.
+- na classe Principal, permita ao usuário selecionar qual tipo de veículo ele quer utilizar (carro ou moto);
+- aumente e diminua as velocidades a seu bel prazer, sempre exibindo a velocidade a cada alteração (se preferir incrementar mais o exercício, permita ao usuário escolher quando acelerar e desacelarar).
+
+
+Requisitos:
+- utilize um construtor não-default na classe Veiculo no seguinte formato: 
+      public Veiculo(String nome, String fabricante, int ano);
+
+- implemente o encapsulamento (getters e setters) de modo que o valor da velocidade não possa ser alterado por alguma classe externa (alheia à regra de negócio), devendo ser alterada, apenas, pelos métodos de negócio ("acelerar", "desacelerar" e "parar");
+
+- limite a faixa de velocidade entre 0km/h a 220km/h.
+
+
+
+
+
+
+
+
+Ex. 2 - Crie um novo projeto ("Aula03_03"); nele, crie uma classe chamada Principal, que conterá seu método "main()"; além dessa classe, crie as classes Tempo, Hora e Minuto (sendo, estas duas, classes derivadas da classe Tempo); por fim, crie a classe Horario, que terá as classes Hora e Minuto como atributos (composição de classes). 
+
+A ideia é ter um projeto que consiga incrementar e decrementar horas e minutos, além de imprimir o horário. Ou seja, você terá métodos para incrementar (de 1 em 1) e decrementar (de 1 em 1) para horas e para minutos; além disso, você terá métodos de adição (de 'n') e remoção (de 'n') para horas e para minutos também. Portanto, lembre-se dos conceitos de herança e polimorfismo. 
+
+NOTA: O controle de "minutos > 59 ==> hora++" deve ser feito na classe Horario.
+
+==> concluir como atribuir um valor inicial para cada instância da classe Horario
+==> desenvolver um método para imprimir o horário atual
+
+     Tempo
+       ^
+       |	      Horario (Hora + Minuto)
+    -------
+    |     |
+  Hora  Minuto
+
+public class Horario{
+
+    private Hora hora;
+    private Minuto minuto;
+
+    public Hora getHora(){ 
+        return hora; 
+    }
+    public void setHora(int valor){
+        hora.setUnidade(valor);
+    }
+
+    public Horario(int hora, int minuto){
+        this.hora = new Hora();
+        this.hora.setUnidade(hora);
+
+        this.minuto = new Minuto();
+        this.minuto.setUnidade(minuto);
+    }
+
+
+ }
+
+
+
+
+
+Ex. 3 - Crie um pequeno projeto ("Aula03_04") para controlar uma aula, com todas as entidades envolvidas nela. O projeto deve ter, ao menos, as seguintes classes:
+- Professor (registro, nome e email);
+- Aluno (matricula, nome e email);
+- Disciplina (codigo, ementa);
+- Materia (topico, descricao);
+- Aula (Professor, Aluno[], Disciplina, Materia, diaSemana, horaInicio, horaFim);
+- Principal (onde deverá ter a função "main").
+
+
+Após desenvolver todas as classes e seus atributos, instancie os objetos necessários a fim de que seja possível armazenar e apresentar, através de uma instância da classe Aula, todas as informações pertinentes à aula de uma disciplina qualquer, na qual haja, ao menos 5 alunos. Em seguida, exiba todas as informações armazenadas (nome da matéria, nome do professor, código da disciplina e listagem de alunos).
+
+Notas:
+- para armazenar vários alunos, pesquise sobre a classe "ArrayList";
+- para percorrer o array, utilizar o comando "foreach" ==> "for (Object o: lst)".
+

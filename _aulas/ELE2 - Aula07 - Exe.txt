@@ -1,0 +1,14 @@
+- Ex. 1 (projeto "Aula07_01"):
+Utilizando os conceitos de herança e de eventos tratados anteriormente, e reaproveitando o exemplo atual, faça a sobrescrita de algum método de texto, de forma que o texto a ser exibido na JLabel seja apresentado totalmente em maiúisculo quando a JLabelCustom for empregada no formulário. Entretanto, quando o método que receber o texto for o construtor, o texto deverá ser exibido da mesma forma que for recebido.
+
+- Ex. 2 (projeto "Aula07_02"):
+Utilizando os conceitos de herança e de eventos de tecla (KeyListener), extenda a classe JTextField numa nova classe (chamada "JTextFieldCustom"), que já implemente as seguintes características:
+---> não permitir a entrada de caracteres literais;
+---> ter seu texto, por padrão, em Arial, tamanho 16.
+
+- Ex. 3 (projeto "Aula07_03"):
+Utilizando o exemplo do JCheckBox dos países (e utilizando um JButton), exiba mensagens ao usuário informando o continente, o idioma e a capital do(s) país(es) selecionado(s).
+
+- Ex. 4 (projeto "Aula07_04"):
+A partir do exemplo do JRadioButton das cidades da Baixada Santista, pesquise como impedir que o usuário selecione mais de um elemento. Em seguida, exiba uma mensagem sobre a cidade selecionada.
+Dica: os elementos devem estar agrupados.

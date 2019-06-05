@@ -1,0 +1,16 @@
+Ex. 1 (projeto "Aula14_02"):
+
+Crie um formulário, numa JSP, para que o usuário informe um texto a ser tratado. Esse texto deverá ser enviado a um servlet chamado "servletTrataTexto".
+
+Numa nova classe chamada "Formato", dentro de um pacote de regra de negócio (chamado "negocio"), crie os métodos "retornarMaiusculo" e "retornarMinusculo", que deverá tratar o texto e retorná-lo para que seja exibido em seguida. Porém, a exibição deverá respeitar as seguintes regras:
+
+- se o tamanho do texto for menor que 10, imprima-o no próprio servlet;
+- se o tamanho for entre 10 e 20, imprima-os na própria "index.jsp";
+- se o tamanho do texto for maior que 20, imprima numa página chamada "textoFormatado.jsp".
+
+
+Ex. 2 (projeto "Aula14_03"):
+
+Crie um formulário, numa JSP, para que o usuário informe a cidade que ele mora (se preferir, considerar apenas cidades da Baixada Santista). 
+
+Repasse essa informação a um servlet chamado "ServletCidades". Ele deverá identificar a cidade informada e, em seguida, redirecionar o usuário para a página oficial da prefeitura do município correspondente.

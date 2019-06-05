@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+************* OLD VERSION BELOW ************* 
+
+
+
+
+
+
+
+
+
+Ex. 1 - Crie um novo projeto ("Aula03_03"); nele, crie uma classe chamada Principal, que conterá seu método "main()"; além dessa classe, crie as classes Tempo, Hora e Minuto (sendo, estas duas, classes derivadas da classe Tempo); por fim, crie a classe Horario, que terá as classes Hora e Minuto como atributos (composição de classes). 
+
+A ideia é ter um projeto que consiga incrementar e decrementar horas e minutos, além de imprimir o horário. Ou seja, você terá métodos para incrementar (de 1 em 1) e decrementar (de 1 em 1) para horas e para minutos; além disso, você terá métodos de adição (de 'n') e remoção (de 'n') para horas e para minutos também. Portanto, lembre-se dos conceitos de herança e polimorfismo. 
+
+NOTA: O controle de "minutos > 59 ==> hora++" deve ser feito na classe Horario.
+
+==> concluir como atribuir um valor inicial para cada instância da classe Horario
+==> desenvolver um método para imprimir o horário atual
+
+     Tempo
+       ^
+       |	      Horario (Hora + Minuto)
+    -------
+    |     |
+  Hora  Minuto
+
+public class Horario{
+
+    private Hora hora;
+    private Minuto minuto;
+
+    public Hora getHora(){ 
+        return hora; 
+    }
+    public void setHora(int valor){
+        hora.setUnidade(valor);
+    }
+
+    public Horario(int hora, int minuto){
+        this.hora = new Hora();
+        this.hora.setUnidade(hora);
+
+        this.minuto = new Minuto();
+        this.minuto.setUnidade(minuto);
+    }
+
+
+ }
+
+
+
+
+
+Ex. 2 - Crie um pequeno projeto ("Aula03_04") para controlar uma aula, com todas as entidades envolvidas nela. O projeto deve ter, ao menos, as seguintes classes:
+- Professor (registro, nome e email);
+- Aluno (matricula, nome e email);
+- Disciplina (codigo, ementa);
+- Materia (topico, descricao);
+- Aula (Professor, Aluno[], Disciplina, Materia, diaSemana, horaInicio, horaFim);
+- Principal (onde deverá ter a função "main").
+
+
+Após desenvolver todas as classes e seus atributos, instancie os objetos necessários a fim de que seja possível armazenar e apresentar, através de uma instância da classe Aula, todas as informações pertinentes à aula de uma disciplina qualquer, na qual haja, ao menos 5 alunos. Em seguida, exiba todas as informações armazenadas (nome da matéria, nome do professor, código da disciplina e listagem de alunos).
+
+Notas:
+- para armazenar vários alunos, pesquise sobre a classe "ArrayList";
+- para percorrer o array, utilizar o comando "foreach" ==> "for (Object o: lst)".
+

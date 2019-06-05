@@ -1,0 +1,24 @@
+Ex. 1 - Complemente o exercício atual ("Aula05_01"), com os seguintes requisitos: 
+- configure a fonte da JLabel e da JTextField, para que sejam maiores; e, no caso da JLabel, deixe sua fonte azul;
+
+- recupere o texto informado na caixa de texto (JTextField) e, utilizando eventos, ("ActionListener"), exiba-o num JOptionPane.
+
+
+Ex. 2 ("Aula05_02"):
+
+- Utilizando SWING (JFrame, JLabel, JButton e JTextField), crie uma calculadora para as 4 operações aritméticas básicas. 
+
+Porém, crie os cálculos ("regras de negócio") num outro pacote (chamado "negocio"), a partir das classes concretas Adicao, Subtracao, Multiplicacao e Divisao, que serão filhas da classe abstrata "Calculo"; esta, por sua vez, deverá implementar a interface ICalculo abaixo:
+
+interface ICalculo{
+    float calcular(float valor1, float valor2);
+}
+
+
+
+Ex. 3 (Sugestão: preservar o projeto anterior e criar um novo, de nome "Aula05_03"):
+Utilizando o exercício da Calculadora anterior, implemente o(s) evento(s) de tecla(s) necessários para evitar que o usuário informe letras nos campos de valores numéricos da calculadora.
+
+Notas: 
+- método a ser desenvolvido nos JTextFields: addKeyListener
+- faça com que, ao apagar ou alterar o valor de qualquer uma das JTextFields, o valor do resultado seja também zerado.

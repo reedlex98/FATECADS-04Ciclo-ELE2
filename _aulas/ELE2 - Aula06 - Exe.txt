@@ -1,0 +1,9 @@
+Ex. 1: 
+Utilizando o projeto atual (projeto "Aula06_01") como base, resolva:
+a) apresente o novo valor selecionado no ComboBox e exiba-o apenas uma única vez;
+b) caso esteja selecionado um valor válido ("Masculino" ou "Feminino") e o usuário tente selecionar um valor inválido ("<< SELECIONE >>"), informe-lhe que esse novo valor não é permitido e retorne o valor que estava exibido anteriormente.
+
+Ex. 2 (projeto "Aula06_02"): Crie um novo projeto e, utilizando SWING, elabore um formulário com um JComboBox onde haja 3 gêneros musicais quaisquer (no mínimo). Após o usuário selecionar um gênero musical, apresente, num outro JComboBox, 3 cantores/bandas representantes desse gênero musical escolhido. Após o usuário selecionar qual cantor/banda ele mais gosta, apresente o título de uma música que é interpretada por esse cantor/banda.
+
+Ex. 3 (projeto "Aula06_03"): Utilizando o exemplo do JComboBox dos semestres remanescentes, exiba mensagens "criativas", de acordo com a quantidade de semestres restantes para a conclusão do curso ("falta muito, hein?", "ainda neste século?" e coisas do tipo).
+

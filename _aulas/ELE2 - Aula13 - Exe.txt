@@ -1,0 +1,29 @@
+Ex. 1 (projeto "Aula13_03"):
+
+Crie um novo projeto web (apenas com JSP). Crie um pacote para a regra de negócio (sugestão de nome: "negocio"), onde deverá existir uma classe chamada "Calculo", que irá realizar os cálculos das 4 operações aritméticas básicas. A classe Calculo deve implementar a interface ICalculo abaixo:
+
+interface ICalculo{
+    void somar();
+    void subtrair();
+    void multiplicar();
+    void dividir();
+}
+
+Na página "index.jsp", crie um formulário para receber 2 valores numéricos e instanciar objetos da classe "Calculo". 
+
+Receba os valores informados pelo cliente e passe-os ao objeto da Calculo, realizando as 4 operações aritméticas (cada uma em um botão diferente) e devolvendo o resultado ao cliente (via HTML).
+
+
+
+Ex. 2 (projeto "Aula13_04"):
+
+Crie um novo projeto web, agora envolvendo JSP e Servlet. O projeto deverá ter uma primeira página "index.jsp", que deverá receber os valores para cálculo da regra de negócio. Após o "submit", envie os dados recebidos para o servlet, que deverá chamar as regras de negócio. O projeto deverá ter um pacote "negocio", no qual deverá haver a classe Massa, que implementará a interface abaixo:
+
+interface IMassa{
+	float converterQuiloParaLibra(float peso);
+	float converterLibraParaQuilo(float peso);
+}
+
+O servlet, chamado "servletConversaoDeMassa", deverá ficar num pacote chamado "servlets".
+
+Nota: 1kg ==> 2,2046lbs

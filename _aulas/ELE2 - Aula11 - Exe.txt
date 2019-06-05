@@ -1,0 +1,33 @@
+Ex. 1 (projeto "Aula11_01"):
+Crie um novo projeto no padrão Servlet. Crie um pacote para a regra de negócio chamado "negocio", onde deverá existir uma classe chamada "Massa", que implementará a interface abaixo:
+
+interface IMassa{
+	float converterQuiloParaLibra(float massa);
+	float converterLibraParaQuilo(float massa);
+}
+
+Em seguida, num outro pacote chamado "servlets", crie o servlet chamado "ServletForm" e, dentro deste, crie um formulário para receber 1 valor numérico, que deverá ser convertido. Crie 2 botões para realizar as conversões de quilogramas para libras e vice-versa.
+
+Neste mesmo pacote, crie um servlet chamado "ServletConversaoDeMassa" e, nele, execute as regras de negócio para exibir os valores convertidos de acordo com o botão clicado no formulário HTML.
+
+Nota: 1kg ==> 2,2046lbs
+
+
+
+
+
+
+
+Ex. 2 (projeto "Aula11_02"):
+
+Crie um novo projeto padrão Servlet. Nesse projeto, faça um pacote para a regra (chamado "negocio"), onde deverá existir uma classe abstrata chamada "Figura", que implementará a interface abaixo:
+
+interface IFigura{
+	void calcularArea();
+}
+
+Ainda no pacote "negocio", crie 2 classes, Circulo e Retangulo, derivadas da classe Figura, e implemente as regras de negócio (no caso, o método "calcularArea"), bem como os atributos necessários para tal cálculo.
+
+Em outro pacote, chamado "servlets", crie o servlet chamado "ServletForm" e, dentro deste, crie um formulário para receber os valores necessários para realizar o cálculo das áreas das figuras círculo e retângulo. Crie, também, 2 botões, com os textos "Calcular área do círculo" e "Calcular área do retângulo".
+
+Neste mesmo pacote, crie um servlet chamado "ServletFiguras" e, nele, execute as regras de negócio para exibir os valores calculados de acordo com o botão clicado no formulário HTML.
